@@ -120,7 +120,7 @@ public class NumberToGeoStr {
         }
 
         if (String.valueOf(number).length() > 3) {
-            throw new AssertionError("Number is too big");
+            throw new IllegalArgumentException("Number is too big");
         }
 
         StringBuilder rsltBldr = new StringBuilder();
